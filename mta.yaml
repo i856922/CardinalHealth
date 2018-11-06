@@ -1,0 +1,19 @@
+ID: CardinalKevin
+_schema-version: '2.0'
+version: 0.0.1
+
+modules:
+ - name: CardinalK
+   type: hdb
+   path: CardinalK
+   requires:
+    - name: hdi_CardinalK
+
+resources:
+ - name: hdi_CardinalK
+   parameters:
+      config:
+         schema: CARDK
+   properties:
+      hdi-container-name: ${service-name}
+   type: com.sap.xs.hdi-container
