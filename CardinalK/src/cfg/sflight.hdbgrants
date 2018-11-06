@@ -1,0 +1,14 @@
+{
+	"SFLIGHT":{
+		"object_owner":{
+			"schema_privileges":[{
+				"privileges_with_grant_option":["SELECT","SELECT METADATA"]
+			}]
+		},
+		"application_user":{
+			"schema_privileges":[{
+					"privileges":["SELECT","SELECT METADATA"]
+			}]
+		}
+	}
+}

@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="CVBOOK" applyPrivilegeType="NONE" dataCategory="DIMENSION" dimensionType="STANDARD" schemaVersion="3.0" outputViewType="Projection" cacheInvalidationPeriod="NONE" enforceSqlExecution="false">
+<descriptions defaultDescription="CVBOOK"/>
+<localVariables/>
+<variableMappings/>
+<dataSources>
+  <DataSource id="S_SBOOK">
+    <resourceUri>S_SBOOK</resourceUri>
+  </DataSource>
+</dataSources>
+<calculationViews>
+  <calculationView xsi:type="Calculation:ProjectionView" id="SBOOK" filterExpressionLanguage="SQL">
+    <viewAttributes>
+      <viewAttribute id="MANDT">
+        <descriptions defaultDescription="MANDT"/>
+      </viewAttribute>
+      <viewAttribute id="CARRID">
+        <descriptions defaultDescription="CARRID"/>
+      </viewAttribute>
+      <viewAttribute id="CONNID">
+        <descriptions defaultDescription="CONNID"/>
+      </viewAttribute>
+      <viewAttribute id="FLDATE">
+        <descriptions defaultDescription="FLDATE"/>
+      </viewAttribute>
+      <viewAttribute id="BOOKID">
+        <descriptions defaultDescription="BOOKID"/>
+      </viewAttribute>
+      <viewAttribute id="CUSTOMID">
+        <descriptions defaultDescription="CUSTOMID"/>
+      </viewAttribute>
+      <viewAttribute id="CUSTTYPE">
+        <descriptions defaultDescription="CUSTTYPE"/>
+      </viewAttribute>
+      <viewAttribute id="SMOKER">
+        <descriptions defaultDescription="SMOKER"/>
+      </viewAttribute>
+      <viewAttribute id="LUGGWEIGHT">
+        <descriptions defaultDescription="LUGGWEIGHT"/>
+      </viewAttribute>
+      <viewAttribute id="WUNIT">
+        <descriptions defaultDescription="WUNIT"/>
+      </viewAttribute>
+      <viewAttribute id="INVOICE">
+        <descriptions defaultDescription="INVOICE"/>
+      </viewAttribute>
+      <viewAttribute id="CLASS">
+        <descriptions defaultDescription="CLASS"/>
+      </viewAttribute>
+      <viewAttribute id="FORCURAM">
+        <descriptions defaultDescription="FORCURAM"/>
+      </viewAttribute>
+      <viewAttribute id="FORCURKEY">
+        <descriptions defaultDescription="FORCURKEY"/>
+      </viewAttribute>
+      <viewAttribute id="LOCCURAM">
+        <descriptions defaultDescription="LOCCURAM"/>
+      </viewAttribute>
+      <viewAttribute id="LOCCURKEY">
+        <descriptions defaultDescription="LOCCURKEY"/>
+      </viewAttribute>
+      <viewAttribute id="ORDER_DATE">
+        <descriptions defaultDescription="ORDER_DATE"/>
+      </viewAttribute>
+      <viewAttribute id="COUNTER">
+        <descriptions defaultDescription="COUNTER"/>
+      </viewAttribute>
+      <viewAttribute id="AGENCYNUM">
+        <descriptions defaultDescription="AGENCYNUM"/>
+      </viewAttribute>
+      <viewAttribute id="CANCELLED">
+        <descriptions defaultDescription="CANCELLED"/>
+      </viewAttribute>
+      <viewAttribute id="RESERVED">
+        <descriptions defaultDescription="RESERVED"/>
+      </viewAttribute>
+      <viewAttribute id="PASSNAME">
+        <descriptions defaultDescription="PASSNAME"/>
+      </viewAttribute>
+      <viewAttribute id="PASSFORM">
+        <descriptions defaultDescription="PASSFORM"/>
+      </viewAttribute>
+      <viewAttribute id="PASSBIRTH">
+        <descriptions defaultDescription="PASSBIRTH"/>
+      </viewAttribute>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <restrictedViewAttributes/>
+    <input node="S_SBOOK">
+      <mapping xsi:type="Calculation:AttributeMapping" target="MANDT" source="MANDT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="CARRID" source="CARRID"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="CONNID" source="CONNID"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="FLDATE" source="FLDATE"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="BOOKID" source="BOOKID"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="CUSTOMID" source="CUSTOMID"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="CUSTTYPE" source="CUSTTYPE"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="SMOKER" source="SMOKER"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="LUGGWEIGHT" source="LUGGWEIGHT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="WUNIT" source="WUNIT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="INVOICE" source="INVOICE"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="CLASS" source="CLASS"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="FORCURAM" source="FORCURAM"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="FORCURKEY" source="FORCURKEY"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="LOCCURAM" source="LOCCURAM"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="LOCCURKEY" source="LOCCURKEY"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="ORDER_DATE" source="ORDER_DATE"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="COUNTER" source="COUNTER"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="AGENCYNUM" source="AGENCYNUM"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="CANCELLED" source="CANCELLED"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="RESERVED" source="RESERVED"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="PASSNAME" source="PASSNAME"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="PASSFORM" source="PASSFORM"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="PASSBIRTH" source="PASSBIRTH"/>
+    </input>
+  </calculationView>
+</calculationViews>
+<logicalModel id="SBOOK">
+  <attributes>
+    <attribute id="MANDT" order="1" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="MANDT"/>
+      <keyMapping columnObjectName="SBOOK" columnName="MANDT"/>
+    </attribute>
+    <attribute id="CARRID" order="2" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="CARRID"/>
+      <keyMapping columnObjectName="SBOOK" columnName="CARRID"/>
+    </attribute>
+    <attribute id="CONNID" order="3" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="CONNID"/>
+      <keyMapping columnObjectName="SBOOK" columnName="CONNID"/>
+    </attribute>
+    <attribute id="FLDATE" order="4" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="FLDATE"/>
+      <keyMapping columnObjectName="SBOOK" columnName="FLDATE"/>
+    </attribute>
+    <attribute id="BOOKID" order="5" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="BOOKID"/>
+      <keyMapping columnObjectName="SBOOK" columnName="BOOKID"/>
+    </attribute>
+    <attribute id="CUSTOMID" order="6" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="CUSTOMID"/>
+      <keyMapping columnObjectName="SBOOK" columnName="CUSTOMID"/>
+    </attribute>
+    <attribute id="CUSTTYPE" order="7" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="CUSTTYPE"/>
+      <keyMapping columnObjectName="SBOOK" columnName="CUSTTYPE"/>
+    </attribute>
+    <attribute id="SMOKER" order="8" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="SMOKER"/>
+      <keyMapping columnObjectName="SBOOK" columnName="SMOKER"/>
+    </attribute>
+    <attribute id="LUGGWEIGHT" order="9" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="LUGGWEIGHT"/>
+      <keyMapping columnObjectName="SBOOK" columnName="LUGGWEIGHT"/>
+    </attribute>
+    <attribute id="WUNIT" order="10" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WUNIT"/>
+      <keyMapping columnObjectName="SBOOK" columnName="WUNIT"/>
+    </attribute>
+    <attribute id="INVOICE" order="11" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="INVOICE"/>
+      <keyMapping columnObjectName="SBOOK" columnName="INVOICE"/>
+    </attribute>
+    <attribute id="CLASS" order="12" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="CLASS"/>
+      <keyMapping columnObjectName="SBOOK" columnName="CLASS"/>
+    </attribute>
+    <attribute id="FORCURAM" order="13" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="FORCURAM"/>
+      <keyMapping columnObjectName="SBOOK" columnName="FORCURAM"/>
+    </attribute>
+    <attribute id="FORCURKEY" order="14" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="FORCURKEY"/>
+      <keyMapping columnObjectName="SBOOK" columnName="FORCURKEY"/>
+    </attribute>
+    <attribute id="LOCCURAM" order="15" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="LOCCURAM"/>
+      <keyMapping columnObjectName="SBOOK" columnName="LOCCURAM"/>
+    </attribute>
+    <attribute id="LOCCURKEY" order="16" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="LOCCURKEY"/>
+      <keyMapping columnObjectName="SBOOK" columnName="LOCCURKEY"/>
+    </attribute>
+    <attribute id="ORDER_DATE" order="17" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ORDER_DATE"/>
+      <keyMapping columnObjectName="SBOOK" columnName="ORDER_DATE"/>
+    </attribute>
+    <attribute id="COUNTER" order="18" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="COUNTER"/>
+      <keyMapping columnObjectName="SBOOK" columnName="COUNTER"/>
+    </attribute>
+    <attribute id="AGENCYNUM" order="19" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="AGENCYNUM"/>
+      <keyMapping columnObjectName="SBOOK" columnName="AGENCYNUM"/>
+    </attribute>
+    <attribute id="CANCELLED" order="20" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="CANCELLED"/>
+      <keyMapping columnObjectName="SBOOK" columnName="CANCELLED"/>
+    </attribute>
+    <attribute id="RESERVED" order="21" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="RESERVED"/>
+      <keyMapping columnObjectName="SBOOK" columnName="RESERVED"/>
+    </attribute>
+    <attribute id="PASSNAME" order="22" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PASSNAME"/>
+      <keyMapping columnObjectName="SBOOK" columnName="PASSNAME"/>
+    </attribute>
+    <attribute id="PASSFORM" order="23" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PASSFORM"/>
+      <keyMapping columnObjectName="SBOOK" columnName="PASSFORM"/>
+    </attribute>
+    <attribute id="PASSBIRTH" order="24" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PASSBIRTH"/>
+      <keyMapping columnObjectName="SBOOK" columnName="PASSBIRTH"/>
+    </attribute>
+  </attributes>
+  <calculatedAttributes/>
+  <baseMeasures/>
+  <calculatedMeasures/>
+  <restrictedMeasures/>
+</logicalModel>
+<layout>
+  <shapes>
+    <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+      <upperLeftCorner x="92" y="112"/>
+    
+      <rectangleSize width="160"/>
+    </shape>
+  
+    <shape expanded="true" modelObjectName="SBOOK" modelObjectNameSpace="CalculationView">
+      <upperLeftCorner x="92" y="217"/>
+      <rectangleSize height="30" width="160"/>
+    </shape>
+  </shapes>
+</layout>
+</Calculation:scenario>
