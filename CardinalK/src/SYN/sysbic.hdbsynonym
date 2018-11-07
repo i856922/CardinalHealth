@@ -1,0 +1,8 @@
+{
+  "S_TEST1": {
+    "target": {
+      "object": "tes_view/TEST1",
+      "schema": "_SYS_BIC"
+    }
+  }
+}

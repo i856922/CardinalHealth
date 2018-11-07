@@ -1,0 +1,12 @@
+{
+	"role":{
+		"name": "tab",
+		"object_privileges":[{ 
+	        "name":"CV_TEST", 
+	        "type":"VIEW", 
+	        "privileges":[ "SELECT" ]
+	    	}
+		],
+		"global_roles":["CARDKTEST"]
+	}
+}

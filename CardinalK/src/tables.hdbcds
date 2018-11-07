@@ -1,0 +1,4 @@
+/*@@layout{"layoutInfo":{"x":201,"y":-7.5}}*/
+entity Entity_1 {
+    key ID : Integer;
+};
